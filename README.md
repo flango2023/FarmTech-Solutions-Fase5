@@ -1,3 +1,11 @@
+# FIAP - Faculdade de Informática e Administração Paulista
+
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+</p>
+
+<br>
+
 # FarmTech Solutions - Fase 5: Machine Learning na Era da Cloud Computing
 
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
