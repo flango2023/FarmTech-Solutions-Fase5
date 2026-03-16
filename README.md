@@ -26,6 +26,60 @@ Este projeto implementa uma solução completa de Machine Learning supervisionad
 
 ---
 
+## Estrutura de Arquivos
+
+```
+FarmTech-Solutions-Fase5/
+├── README.md                                    # Este arquivo
+├── RichardSchmitz_rm567951_pbl_fase5.ipynb     # Notebook completo
+├── crop_yield.csv                              # Dataset
+├── requirements.txt                            # Dependências Python
+├── visualizacoes/                              # Gráficos salvos
+│   ├── correlacao_heatmap.png
+│   ├── clusters_visualization.png
+│   └── modelos_comparacao.png
+└── docs/                                       # Documentação adicional
+    ├── METODOLOGIA.md
+    └── CONCLUSOES.md
+```
+
+---
+
+## Como Usar
+
+### Pré-requisitos
+
+```bash
+Python 3.8+
+pip
+```
+
+### Instalação de Dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+ou manualmente:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+### Executar o Notebook
+
+```bash
+jupyter notebook RichardSchmitz_rm567951_pbl_fase5.ipynb
+```
+
+ou no JupyterLab:
+
+```bash
+jupyter lab RichardSchmitz_rm567951_pbl_fase5.ipynb
+```
+
+---
+
 ## Dataset: crop_yield.csv
 
 ### Estrutura e Variáveis
@@ -204,96 +258,13 @@ FarmTech-Solutions-Fase5/
 
 ---
 
-## Como Usar
+## Conclusão
 
-### Pré-requisitos
+Nesta 5. fase do FarmTech Solution, procurei demonstar que é possível prever com precisão o rendimento de safra (R² = 0.82) utilizando apenas dados meteorológicos básicos. O algoritmo Gradient Boosting apresentou o melhor desempenho, capturando relações não-lineares complexas entre variáveis ambientais e produtividade.
 
-```bash
-Python 3.8+
-pip
-```
-
-### Instalação de Dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-ou manualmente:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
-
-### Executar o Notebook
-
-```bash
-jupyter notebook RichardSchmitz_rm567951_pbl_fase5.ipynb
-```
-
-ou no JupyterLab:
-
-```bash
-jupyter lab RichardSchmitz_rm567951_pbl_fase5.ipynb
-```
-
----
-
-## Análise de Resultados
-
-### Pontos Fortes
-
-✓ Análise exploratória completa com visualizações claras  
-✓ Clustering efetivo para segmentação de cenários  
-✓ Detecção robusta de outliers com método estatístico  
-✓ Ensemble diversificado de cinco algoritmos  
-✓ Avaliação com múltiplas métricas apropriadas  
-✓ Interpretabilidade através de importância de features  
-✓ Baixo overfitting nos melhores modelos  
-
-### Limitações
-
-⚠ Tamanho limitado do dataset (155 amostras)  
-⚠ Apenas 4 features preditoras  
-⚠ Dataset contém múltiplas culturas agregadas  
-⚠ Ausência de componente temporal/sazonal  
-⚠ Sem dados históricos para séries temporais  
-
-### Melhorias Futuras
-
-1. Aumentar dataset com mais amostras e histórico
-2. Incorporar engenharia de features (polinômios, interações)
-3. Treinar modelos específicos por cultura
-4. Implementar modelos LSTM para série temporal
-5. Adicionar validação cruzada (k-fold)
-6. Explorar ensemble stacking de múltiplos modelos
-7. Integração com cloud computing (AWS, GCP, Azure)
-
----
-
-## Conclusões Principais
-
-O projeto demonstrou que é possível prever com precisão o rendimento de safra (R² = 0.82) utilizando apenas dados meteorológicos básicos. O algoritmo Gradient Boosting apresentou o melhor desempenho, capturando relações não-lineares complexas entre variáveis ambientais e produtividade.
-
-A temperatura emergiu como o fator mais importante (42.3% da importância), seguida pela precipitação (31.7%), indicando que condições térmicas e hídricas são críticas para o rendimento agrícola. A identificação de três clusters distintos sugere estratégias de manejo diferenciado por cenário.
+Também, é impoprtante frisar que a temperatura emergiu como o fator mais importante (42.3% da importância), seguida pela precipitação (31.7%), indicando que condições térmicas e hídricas são críticas para o rendimento agrícola. A identificação de três clusters distintos sugere estratégias de manejo diferenciado por cenário.
 
 Este trabalho estabelece uma base sólida para sistemas de predição agrícola em produção, podendo ser expandido com dados reais de campo e integrado em plataformas de cloud computing para suporte a decisões em tempo real.
-
----
-
-## Vídeo Demonstrativo
-
-Assista a demonstração do funcionamento completo do projeto (até 5 minutos):
-
-🎥 **Vídeo no YouTube:** [Link ainda será adicionado após publicação]
-
-O vídeo demonstra:
-- Carregamento e exploração dos dados
-- Visualizações de clustering e outliers
-- Treinamento dos cinco modelos
-- Comparação de desempenho
-- Análise de importância de features
-- Conclusões finais
 
 ---
 
@@ -305,14 +276,6 @@ O vídeo demonstra:
 4. FIAP Course Materials - Chapter 13: Supervised Learning Regression
 5. FIAP Course Materials - Chapter 10: Unsupervised Learning Clustering
 
----
-
-## Contato e Suporte
-
-**Desenvolvedor:** Richard Schmitz  
-**Email:** richard.schmitz01@outlook.com  
-**LinkedIn:** linkedin.com/in/richard-schmitz01  
-**GitHub:** github.com/flango2023  
 
 ---
 
