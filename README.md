@@ -245,24 +245,6 @@ R² Score (Coeficiente de Determinação)
 - Rendimento médio: 3,456 t/ha
 - Características: Condições adversas
 
----
-
-## Estrutura de Arquivos
-
-```
-FarmTech-Solutions-Fase5/
-├── README.md                                    # Este arquivo
-├── RichardSchmitz_rm567951_pbl_fase5.ipynb     # Notebook completo
-├── crop_yield.csv                              # Dataset
-├── requirements.txt                            # Dependências Python
-├── visualizacoes/                              # Gráficos salvos
-│   ├── correlacao_heatmap.png
-│   ├── clusters_visualization.png
-│   └── modelos_comparacao.png
-└── docs/                                       # Documentação adicional
-    ├── METODOLOGIA.md
-    └── CONCLUSOES.md
-```
 
 ---
 
