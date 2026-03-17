@@ -1,0 +1,66 @@
+{
+  "sensor_readings": 100,
+  "interaction_events": 12,
+  "ml_results": {
+    "classifier_metrics": {
+      "accuracy": 0.6666666666666666,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.6666666666666666,
+      "cross_val_score": 0.5555555555555555
+    },
+    "regressor_metrics": {
+      "mae": 0.876,
+      "rmse": 1.0347560098883215,
+      "r2_score": 0.2127058823529412,
+      "cross_val_score": 0.2245334807635175
+    },
+    "clustering_results": {
+      "optimal_clusters": 3,
+      "cluster_analysis": {
+        "cluster_0": {
+          "size": 1,
+          "avg_interactions": 30.0,
+          "avg_intensity": 92.08359696138659,
+          "behavior_type": "High Engagement"
+        },
+        "cluster_1": {
+          "size": 1,
+          "avg_interactions": 20.0,
+          "avg_intensity": 73.83443043256001,
+          "behavior_type": "High Engagement"
+        },
+        "cluster_2": {
+          "size": 2,
+          "avg_interactions": 25.0,
+          "avg_intensity": 157.07137022471193,
+          "behavior_type": "High Engagement"
+        }
+      }
+    }
+  },
+  "system_report": {
+    "timestamp": "2026-03-05T16:15:47.056678",
+    "system_status": {
+      "database_records": 100,
+      "processed_events": 12,
+      "models_trained": 2,
+      "integration_level": 96.7
+    },
+    "security_status": {
+      "current_threat_level": "LOW",
+      "events_last_24h": 0,
+      "event_types": {},
+      "severity_distribution": {}
+    },
+    "ml_models": [
+      "interaction_classifier",
+      "flow_predictor"
+    ],
+    "data_quality": {
+      "validation_rate": 95.8,
+      "processing_latency": 87,
+      "system_uptime": 99.7
+    }
+  }
+}
