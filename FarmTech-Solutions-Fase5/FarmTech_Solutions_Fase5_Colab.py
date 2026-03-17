@@ -187,15 +187,17 @@ def main():
         plt.xlabel("Modelo")
         plt.ylabel("R²")
         plt.title("Comparação de R²")
-        plt.ylim(min(0, results_df["R2"].min() - 0.05), 1)
+        plt.ylim(results_df["R2"].min() - 0.1, 1)  # Ajuste para mostrar valores negativos
         for bar, value in zip(bars, results_df["R2"]):
             plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.01, f"{value:.3f}", ha="center")
         plt.xticks(rotation=45)
         plt.grid(axis="y", alpha=0.3)
         plt.tight_layout()
+        plt.savefig("model_comparison.png", dpi=150, bbox_inches="tight")
+        print("Gráfico salvo como 'model_comparison.png'")
         plt.show()
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Erro ao gerar gráfico: {e}")
 
     best = results_df["R2"].idxmax()
     print(f"\nMelhor modelo: {best} (R² = {results_df.loc[best, 'R2']:.4f})")
