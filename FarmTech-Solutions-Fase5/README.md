@@ -1,10 +1,22 @@
-# FarmTech Solutions - Fase 5
+# FIAP - Faculdade de Informática e Administração Paulista
 
-Projeto desenvolvido para a disciplina da FIAP com foco em `Machine Learning` aplicado a produtividade agricola.
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+</p>
 
-## Integrante
+<br>
 
-- **Richard Schmitz** - RM 567951
+# FarmTech Solutions - Fase 5: Machine Learning na Era da Cloud Computing
+
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License](https://img.shields.io/badge/License-FIAP-orange)
+
+**Desenvolvedor:** Richard Schmitz  
+**RM:** 567951  
+**Instituição:** FIAP - Faculdade de Informática e Administração Paulista  
+**Data:** Março 2026  
+**Curso:** Inteligência Artificial  
 
 ## Sobre a entrega
 
@@ -15,7 +27,6 @@ Esta fase possui duas partes:
 2. **Entrega 2 - Cloud Computing**
    Comparacao de custos na AWS e justificativa de escolha da regiao para hospedagem da API e do modelo.
 
-No momento, este repositorio esta organizado com prioridade total na **Entrega 1**. A parte da AWS sera adicionada ao `README` apos a finalizacao da simulacao no AWS Pricing Calculator.
 
 ## Artefato principal
 
