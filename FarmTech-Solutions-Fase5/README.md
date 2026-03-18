@@ -35,7 +35,7 @@ Este projeto implementa uma solução completa de Machine Learning supervisionad
  
 ## Sobre a entrega
 
-Esta fase 5 possui duas partes:
+Esta fase 5 contém duas entregas:
 
 1. **Entrega 1 - Machine Learning**
    Analise exploratoria, identificacao de outliers, clusterizacao e comparacao de cinco modelos de regressao para previsao de rendimento de safra.
@@ -84,14 +84,9 @@ pip install -r requirements.txt
 2. Abra o notebook:
 
 ```bash
-jupyter notebook RichardSchmitz_rm567951_pbl_fase5.ipynb
+jupyter notebook - `RichardSchmitz_rm567951_pbl_fase5.ipynb`
 ```
 
-ou
-
-```bash
-jupyter lab RichardSchmitz_rm567951_pbl_fase5.ipynb
-```
 
 
 # Entrega 2 - AWS
@@ -116,15 +111,15 @@ Resumo da medição:
 - custo total em 12 meses: `94.68 USD`
 
 
-### Comparação de custo
+### Comparação de custos
 
 De acordo com os valores fornecidos na Medição, conclui-se que:
 
 - `N. Virginia` é a opção mais barata;
 - `São Paulo` é de `1.75 USD` por mes acima de `N. Virginia`;
-- isso representa aproximadamente `57%` a mais em relacão ao valor de `N. Virginia`.
+- Logo, isso representa aproximadamente `57%` a mais em relacão ao valor de `N. Virginia`.
 
-### Região AWS recomendada para o projeto
+### AWS Região recomendada para o projeto
 
 Mesmo com custo maior, a região recomendada para este cenario é **South America (São Paulo)**.
 
