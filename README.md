@@ -22,7 +22,7 @@
 
 ## Descrição do Projeto
 
-Este projeto implementa uma solução completa de Machine Learning supervisionado e não supervisionado para análise de rendimento de safra agrícola. Utilizando um dataset de 155 amostras contendo dados meteorológicos e de solo, desenvolvemos cinco modelos preditivos distintos para estimar o rendimento (toneladas por hectare) com base em condições ambientais.
+Este projeto implementa uma solução completa de Machine Learning supervisionado e não supervisionado para análise de rendimento de safra agrícola. Utilizando um dataset de 157 amostras contendo dados meteorológicos e de solo, desenvolvemos cinco modelos preditivos distintos para estimar o rendimento (toneladas por hectare) com base em condições ambientais.
 
 ### Objetivos Principais
 
