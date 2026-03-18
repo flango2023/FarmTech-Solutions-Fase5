@@ -87,6 +87,30 @@ pip install -r requirements.txt
 jupyter notebook - `RichardSchmitz_rm567951_pbl_fase5.ipynb`
 ```
 
+## Dataset: crop_yield.csv
+
+### Estrutura e Variáveis
+
+| Variável | Tipo | Unidade | Descrição |
+|----------|------|---------|-----------|
+| Crop | String | - | Nome da cultura/safra |
+| Precipitation | Numérico | mm/dia | Precipitação média diária |
+| Specific Humidity | Numérico | g/kg | Umidade específica a 2 metros |
+| Relative Humidity | Numérico | % | Umidade relativa a 2 metros |
+| Temperature | Numérico | °C | Temperatura a 2 metros |
+| Yield | Numérico | t/ha | Rendimento (variável alvo) |
+
+### Estatísticas do Dataset
+
+```
+Total de amostras: 156
+Culturas únicas: 5 (Cocoa, Rice, Rubber, Oil Palm, etc.)
+Variáveis preditoras: 4
+Variável alvo: 1 (Yield)
+Missing values: 0
+Outliers detectados: ~8 (5%)
+```
+
 
 
 # Entrega 2 - AWS
