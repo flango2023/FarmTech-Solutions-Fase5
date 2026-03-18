@@ -161,3 +161,23 @@ Se o criterio for apenas **menor preço**, a melhor escolha e `US East (N. Virgi
 Se o critério considerar **restrição legal de armazenamento e acesso rápido aos dados dos sensores**, a escolha mais adequada é `South America (Sao Paulo)`, mesmo com custo mensal superior.
 
 
+## Referências
+
+1. Scikit-learn Documentation: https://scikit-learn.org/
+2. Pandas Documentation: https://pandas.pydata.org/
+3. Machine Learning Mastery - Regression: https://machinelearningmastery.com/
+4. FIAP Course Materials - Chapter 13: Supervised Learning Regression
+5. FIAP Course Materials - Chapter 10: Unsupervised Learning Clustering
+
+
+---
+
+## Licença
+Este projeto foi deselvovido, em partes, com o auxílio de ferramentas de AI, tais como: Claude | Amazon Q ( Titãn) 
+Este projeto foi desenvolvido como parte da avaliação do curso de Inteligência Artificial da FIAP (Faculdade de Informática e Administração Paulista).
+
+**Data de Entrega:** 18 de Março de 2026
+
+---
+
+
