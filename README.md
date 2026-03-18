@@ -18,7 +18,7 @@
 **Data:** Março 2026  
 **Curso:** Inteligência Artificial  
 
-
+## Video --->   https://www.youtube.com/watch?v=S6LL8k55jjg
 
 ## Descrição do Projeto
 
