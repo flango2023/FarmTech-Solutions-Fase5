@@ -69,11 +69,15 @@ Os cinco modelos comparados foram:
 
 ## Estrutura do repositorio
 
-- `RichardSchmitz_rm567951_pbl_fase5.ipynb` - notebook principal da Entrega 1
-- `crop_yield.csv` - base de dados usada na analise
-- `requirements.txt` - dependencias Python
-- `METODOLOGIA.md` - documentacao complementar
-- `EXECUTE_AQUI.md` - observacoes auxiliares
+```
+FarmTech-Solutions-Fase5/
+├── README.md                                    # Este arquivo
+├── RichardSchmitz_rm567951_pbl_fase5.ipynb     # notebook principal da Entrega 1
+├── crop_yield.csv                              # Base de dados usada na analise
+├── requirements.txt                            # Dependências Python
+
+---
+
 
 ## Como executar
 
