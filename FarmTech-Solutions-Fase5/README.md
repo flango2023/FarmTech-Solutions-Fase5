@@ -18,9 +18,20 @@
 **Data:** Março 2026  
 **Curso:** Inteligência Artificial  
 
-## Video
- 
 
+
+## Descrição do Projeto
+
+Este projeto implementa uma solução completa de Machine Learning supervisionado e não supervisionado para análise de rendimento de safra agrícola. Utilizando um dataset de 155 amostras contendo dados meteorológicos e de solo, desenvolvemos cinco modelos preditivos distintos para estimar o rendimento (toneladas por hectare) com base em condições ambientais.
+
+### Objetivos Principais
+
+1. Realizar análise exploratória completa de base de dados agrícola
+2. Identificar padrões e tendências através de clustering não supervisionado
+3. Detectar cenários discrepantes (outliers) que indicam condições atípicas
+4. Desenvolver e comparar cinco modelos preditivos com algoritmos d
+
+ 
 ## Sobre a entrega
 
 Esta fase 5 possui duas partes:
