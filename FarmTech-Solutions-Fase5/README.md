@@ -6,7 +6,7 @@
 
 <br>
 
-# FarmTech Solutions - Fase 5: Machine Learning na Era da Cloud Computing
+# FarmTech Solutions Fase 5 - Machine Learning na Era da Cloud Computing
 
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
@@ -18,6 +18,9 @@
 **Data:** Março 2026  
 **Curso:** Inteligência Artificial  
 
+## Video
+ 
+
 ## Sobre a entrega
 
 Esta fase 5 possui duas partes:
@@ -27,24 +30,9 @@ Esta fase 5 possui duas partes:
 2. **Entrega 2 - AWS Cloud Computing**
    Comparacao de custos na AWS e justificativa de escolha da regiao para hospedagem da API e do modelo.
 
-
-## Principal
-
-O material principal da Entrega 1 esta no notebook:
-
-- `RichardSchmitz_rm567951_pbl_fase5.ipynb`
-
-O notebook já está com:
-
--> celulas executadas;
--> comentarios no codigo;
--> secoes em markdown organizando o raciocinio;
--> graficos para EDA, outliers, clusterizacao e comparacao de modelos;
--> conclusoes e limitacoes ao final.
-
 ## Entrega 1
 
-O Notebook segue o fluxo de acordo com o que foi pedido: 
+O Notebook  - `RichardSchmitz_rm567951_pbl_fase5.ipynb` segue o fluxo de acordo com o que foi pedido: 
 
 1. carregamento e auditoria da base `crop_yield.csv`;
 2. analise exploratoria das culturas e das variaveis climaticas;
@@ -60,12 +48,6 @@ Os cinco modelos comparados foram:
 - `Gradient Boosting Regressor`
 - `Support Vector Regressor (SVR)`
 
-## Principais decisoes metodologicas
-
-- A variavel `Crop` foi mantida na modelagem, porque o tipo de cultura faz parte do problema e influencia fortemente o rendimento.
-- O pre-processamento foi encapsulado em `Pipeline`, evitando vazamento de dados.
-- A divisao entre treino e teste foi feita com `stratify` por cultura.
-- A analise de outliers foi comparada de forma global e por cultura, para nao tratar diferencas estruturais entre culturas como se fossem erros.
 
 ## Estrutura do repositorio
 
@@ -99,9 +81,6 @@ ou
 jupyter lab RichardSchmitz_rm567951_pbl_fase5.ipynb
 ```
 
-
-## Video
- 
 
 # Entrega 2 - AWS
 
