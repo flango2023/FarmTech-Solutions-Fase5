@@ -6,7 +6,7 @@
 
 <br>
 
-# FarmTech Solutions - Fase 5: Machine Learning na Era da Cloud Computing
+# FarmTech Solutions Fase 5 - Machine Learning na Era da Cloud Computing
 
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
@@ -18,7 +18,7 @@
 **Data:** Março 2026  
 **Curso:** Inteligência Artificial  
 
----
+
 
 ## Descrição do Projeto
 
@@ -32,9 +32,36 @@ Este projeto implementa uma solução completa de Machine Learning supervisionad
 4. Desenvolver e comparar cinco modelos preditivos com algoritmos diferentes
 5. Avaliar e selecionar o modelo com melhor desempenho prático
 
----
+ 
+## Sobre a entrega
 
-## Estrutura de Arquivos
+Esta fase 5 contém duas entregas:
+
+1. **Entrega 1 - Machine Learning**
+   Analise exploratoria, identificacao de outliers, clusterizacao e comparacao de cinco modelos de regressao para previsao de rendimento de safra.
+2. **Entrega 2 - AWS Cloud Computing**
+   Comparacao de custos na AWS e justificativa de escolha da regiao para hospedagem da API e do modelo.
+
+## Entrega 1
+
+O Notebook  - `RichardSchmitz_rm567951_pbl_fase5.ipynb` segue o fluxo de acordo com o que foi pedido: 
+
+1. carregamento e auditoria da base `crop_yield.csv`;
+2. analise exploratoria das culturas e das variaveis climaticas;
+3. identificacao de cenarios discrepantes com IQR;
+4. clusterizacao com `K-Means` para explorar perfis de produtividade;
+5. treinamento e avaliacao de cinco algoritmos de regressao.
+
+Os cinco modelos comparados foram:
+
+- `Linear Regression`
+- `Ridge Regression`
+- `Random Forest Regressor`
+- `Gradient Boosting Regressor`
+- `Support Vector Regressor (SVR)`
+
+
+## Estrutura do repositorio
 
 ```
 FarmTech-Solutions-Fase5/
@@ -45,40 +72,20 @@ FarmTech-Solutions-Fase5/
 
 ---
 
-## Como Usar
 
-### Pré-requisitos
+## Como executar
 
-```bash
-Python 3.8+
-pip
-```
-
-### Instalação de Dependências
+1. Instale as dependencias:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-ou manualmente:
+2. Abra o notebook:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
+jupyter notebook - `RichardSchmitz_rm567951_pbl_fase5.ipynb`
 ```
-
-### Executar o Notebook
-
-```bash
-jupyter notebook RichardSchmitz_rm567951_pbl_fase5.ipynb
-```
-
-ou no JupyterLab:
-
-```bash
-jupyter lab RichardSchmitz_rm567951_pbl_fase5.ipynb
-```
-
----
 
 ## Dataset: crop_yield.csv
 
@@ -96,7 +103,7 @@ jupyter lab RichardSchmitz_rm567951_pbl_fase5.ipynb
 ### Estatísticas do Dataset
 
 ```
-Total de amostras: 155
+Total de amostras: 156
 Culturas únicas: 5 (Cocoa, Rice, Rubber, Oil Palm, etc.)
 Variáveis preditoras: 4
 Variável alvo: 1 (Yield)
@@ -104,151 +111,55 @@ Missing values: 0
 Outliers detectados: ~8 (5%)
 ```
 
----
-
-## Metodologia
-
-### 1. Análise Exploratória de Dados (EDA)
-
-- Estatísticas descritivas completas
-- Distribuição de cada variável
-- Análise de correlação entre features
-- Identificação de padrões por cultura
-- Visualizações exploratórias
-
-### 2. Clustering Não Supervisionado
-
-**Técnica:** K-Means
-
-- Normalização de dados (StandardScaler)
-- Determinação ótima de clusters (método do cotovelo)
-- Coeficiente de silhueta para validação
-- **Resultado:** 3 clusters identificados para segmentação de produtividade
-
-### 3. Detecção de Outliers
-
-**Método:** Interquartile Range (IQR)
-
-- Q1: 25º percentil
-- Q3: 75º percentil
-- Limites: [Q1 - 1.5×IQR, Q3 + 1.5×IQR]
-- **Resultado:** 8 outliers removidos para treinamento robusto
-
-### 4. Modelagem Preditiva
-
-Cinco algoritmos implementados para regressão supervisionada:
-
-#### Modelo 1: Linear Regression
-- Tipo: Regressão Linear Simples
-- Vantagens: Interpretação direta, rápido
-- Desvantagens: Assume linearidade
-
-#### Modelo 2: Ridge Regression
-- Tipo: Regressão Linear Regularizada (L2)
-- Alpha: 1.0
-- Vantagens: Reduz overfitting, trata multicolinearidade
-- Desvantagens: Requer ajuste de hiperparâmetro
-
-#### Modelo 3: Random Forest Regressor
-- n_estimators: 100
-- max_depth: 10
-- Vantagens: Captura não-linearidade, importância de features
-- Desvantagens: Computacionalmente mais caro
-
-#### Modelo 4: Gradient Boosting Regressor
-- n_estimators: 100
-- max_depth: 5
-- Vantagens: Excelente desempenho, reduz bias gradualmente
-- Desvantagens: Sensível a overfitting
-
-#### Modelo 5: Support Vector Regressor (SVR)
-- Kernel: RBF (Radial Basis Function)
-- C: 100
-- Vantagens: Eficaz em altas dimensões, flexível
-- Desvantagens: Requer normalização adequada
-
-### 5. Avaliação de Modelos
-
-**Métricas Utilizadas:**
-
-```
-MAE (Mean Absolute Error)
-- Interpretação: erro médio em toneladas/hectare
-- Escala: 0 a infinito (menor é melhor)
-
-MSE (Mean Squared Error)
-- Interpretação: penaliza erros maiores
-- Escala: 0 a infinito (menor é melhor)
-
-RMSE (Root Mean Squared Error)
-- Interpretação: erro quadrático médio (mesma unidade do target)
-- Escala: 0 a infinito (menor é melhor)
-
-R² Score (Coeficiente de Determinação)
-- Interpretação: proporção de variância explicada
-- Escala: 0 a 1 (maior é melhor)
-```
-
----
-
-## Resultados Principais
-
-### Comparação de Modelos (Conjunto de Teste)
-
-| Modelo | R² | RMSE (t/ha) | MAE (t/ha) | Status |
-|--------|----|-----------|---------|----|
-| Gradient Boosting | 0.8234 | 892.45 | 621.37 | ★★★★★ |
-| Random Forest | 0.7956 | 956.23 | 684.12 | ★★★★☆ |
-| Ridge Regression | 0.6847 | 1245.89 | 923.41 | ★★★☆☆ |
-| SVR | 0.6523 | 1356.72 | 1001.28 | ★★★☆☆ |
-| Linear Regression | 0.5891 | 1489.34 | 1087.63 | ★★☆☆☆ |
-
-### Melhor Modelo: Gradient Boosting
-
-**Características:**
-- R² = 0.8234 (explica 82.34% da variância)
-- RMSE = 892.45 t/ha
-- Baixo overfitting (diferença treino-teste < 2%)
-- Importância de features bem definida
-
-### Importância de Features (Gradient Boosting)
-
-1. Temperatura (42.3%)
-2. Precipitação (31.7%)
-3. Umidade Relativa (16.8%)
-4. Umidade Específica (9.2%)
-
----
-
-## Clusters Identificados
-
-### Cluster 0 - Alta Produtividade
-- Amostras: 52
-- Rendimento médio: 8,234 t/ha
-- Características: Temperatura moderada, boa precipitação
-
-### Cluster 1 - Produtividade Média
-- Amostras: 61
-- Rendimento médio: 5,891 t/ha
-- Características: Condições equilibradas
-
-### Cluster 2 - Baixa Produtividade
-- Amostras: 34
-- Rendimento médio: 3,456 t/ha
-- Características: Condições adversas
 
 
----
+# Entrega 2 - AWS
+
+Com base no AWS Pricing Calculator presente no repositorio (`medicao_aws.pdf`), foi realizada uma comparacao entre as regioes:
+
+- `US East (N. Virginia)`
+- `South America (São Paulo)`
+
+### Valores da Medição 
+
+Os valores extraidos do relatório foram:
+
+| Regiao | Custo mensal | Custo upfront |
+|---|---:|---:|
+| US East (N. Virginia) | `3.07 USD` | `0.00 USD` |
+| South America (São Paulo) | `4.82 USD` | `0.00 USD` |
+
+Resumo da medição:
+
+- custo mensal total: `7.89 USD`
+- custo total em 12 meses: `94.68 USD`
+
+
+### Comparação de custos
+
+De acordo com os valores fornecidos na Medição, conclui-se que:
+
+- `N. Virginia` é a opção mais barata;
+- `São Paulo` é de `1.75 USD` por mes acima de `N. Virginia`;
+- Logo, isso representa aproximadamente `57%` a mais em relacão ao valor de `N. Virginia`.
+
+### AWS Região recomendada para o projeto
+
+Mesmo com custo maior, a região recomendada para este cenario é **South America (São Paulo)**.
+
+Justificativa:
+
+- A proposta do enunciado deixa bem claro que existem **restricoes legais para armazenamento no exterior**;
+- manter a infraestrutura no Brasil reduz risco de não conformidade regulatória;
+- a proximidade geografica pode ajudar em latencia e acesso mais rápido aos dados dos sensores;
+- para uma API que recebe dados agricolas e executa o modelo de ML, conformidade e disponibilidade local tendem a pesar mais do que a menor economia mensal.
 
 ## Conclusão
 
-Nesta 5. fase do FarmTech Solution, procurei demonstar que é possível prever com precisão o rendimento de safra (R² = 0.82) utilizando apenas dados meteorológicos básicos. O algoritmo Gradient Boosting apresentou o melhor desempenho, capturando relações não-lineares complexas entre variáveis ambientais e produtividade.
+Se o criterio for apenas **menor preço**, a melhor escolha e `US East (N. Virginia)`.
 
-Também, é impoprtante frisar que a temperatura emergiu como o fator mais importante (42.3% da importância), seguida pela precipitação (31.7%), indicando que condições térmicas e hídricas são críticas para o rendimento agrícola. A identificação de três clusters distintos sugere estratégias de manejo diferenciado por cenário.
+Se o critério considerar **restrição legal de armazenamento e acesso rápido aos dados dos sensores**, a escolha mais adequada é `South America (Sao Paulo)`, mesmo com custo mensal superior.
 
-Este trabalho estabelece uma base sólida para sistemas de predição agrícola em produção, podendo ser expandido com dados reais de campo e integrado em plataformas de cloud computing para suporte a decisões em tempo real.
-
----
 
 ## Referências
 
@@ -262,11 +173,11 @@ Este trabalho estabelece uma base sólida para sistemas de predição agrícola 
 ---
 
 ## Licença
-
+Este projeto foi deselvovido, em partes, com o auxílio de ferramentas de AI, tais como: Claude | Amazon Q ( Titãn) 
 Este projeto foi desenvolvido como parte da avaliação do curso de Inteligência Artificial da FIAP (Faculdade de Informática e Administração Paulista).
 
 **Data de Entrega:** 18 de Março de 2026
 
 ---
 
-**Última atualização:** Março 2026
+
