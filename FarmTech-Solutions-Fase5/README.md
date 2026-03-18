@@ -29,7 +29,8 @@ Este projeto implementa uma solução completa de Machine Learning supervisionad
 1. Realizar análise exploratória completa de base de dados agrícola
 2. Identificar padrões e tendências através de clustering não supervisionado
 3. Detectar cenários discrepantes (outliers) que indicam condições atípicas
-4. Desenvolver e comparar cinco modelos preditivos com algoritmos d
+4. Desenvolver e comparar cinco modelos preditivos com algoritmos diferentes
+5. Avaliar e selecionar o modelo com melhor desempenho prático
 
  
 ## Sobre a entrega
